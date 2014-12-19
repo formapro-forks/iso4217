@@ -35,6 +35,8 @@
 
 <p>A PHP library providing ISO 4217 data.</p>
 
+<p><a href="https://travis-ci.org/alcohol/iso4217"><img src="https://travis-ci.org/alcohol/iso4217.svg?branch=master" alt="Build Status"></a></p>
+
 <h2>
 <a id="what-is-iso-4217" class="anchor" href="#what-is-iso-4217" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is ISO 4217</h2>
 
@@ -49,13 +51,13 @@
 
 <p>Either install directly from command line using composer:</p>
 
-<div class="highlight highlight-sh"><pre>$ composer require <span class="s2">"alcohol/iso4217:~2.0"</span></pre></div>
+<div class="highlight highlight-sh"><pre>$ composer require <span class="pl-s1"><span class="pl-pds">"</span>alcohol/iso4217:~2.0<span class="pl-pds">"</span></span></pre></div>
 
 <p>or manually include it as a dependency in your composer.json:</p>
 
 <div class="highlight highlight-javascript"><pre>{
-    <span class="s2">"require"</span><span class="o">:</span> {
-        <span class="s2">"alcohol/iso4217"</span><span class="o">:</span> <span class="s2">"~2.0"</span>
+    <span class="pl-s1"><span class="pl-pds">"</span>require<span class="pl-pds">"</span></span><span class="pl-k">:</span> {
+        <span class="pl-s1"><span class="pl-pds">"</span>alcohol/iso4217<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">"</span>~2.0<span class="pl-pds">"</span></span>
     }
 }</pre></div>
 
@@ -64,16 +66,16 @@
 
 <p>Code:</p>
 
-<div class="highlight highlight-php"><pre><span class="cp">&lt;?php</span><span class="h"></span>
-<span class="h"></span>
-<span class="h"><span class="nv">$iso4217</span> <span class="o">=</span> <span class="k">new</span> Alcohol\<span class="no">ISO4217</span>;</span>
-<span class="h"></span>
-<span class="h"><span class="nv">$iso4217</span><span class="o">-&gt;</span>getByAlpha3(<span class="s1">'EUR'</span>);</span>
-<span class="h"><span class="c1">// or</span></span>
-<span class="h"><span class="nv">$iso4217</span><span class="o">-&gt;</span>getByNumeric(<span class="s1">'978'</span>);</span>
-<span class="h"></span>
-<span class="h"><span class="c1">// also</span></span>
-<span class="h"><span class="nv">$iso4217</span><span class="o">-&gt;</span>getAll();</span></pre></div>
+<div class="highlight highlight-php"><pre><span class="pl-pse">&lt;?php</span><span class="pl-s2"></span>
+<span class="pl-s2"></span>
+<span class="pl-s2"><span class="pl-vo">$iso4217</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-s3">Alcohol\</span><span class="pl-s3">ISO4217</span>;</span>
+<span class="pl-s2"></span>
+<span class="pl-s2"><span class="pl-vo">$iso4217</span><span class="pl-k">-&gt;</span>getByAlpha3(<span class="pl-s1"><span class="pl-pds">'</span>EUR<span class="pl-pds">'</span></span>);</span>
+<span class="pl-s2"><span class="pl-c">// or</span></span>
+<span class="pl-s2"><span class="pl-vo">$iso4217</span><span class="pl-k">-&gt;</span>getByNumeric(<span class="pl-s1"><span class="pl-pds">'</span>978<span class="pl-pds">'</span></span>);</span>
+<span class="pl-s2"></span>
+<span class="pl-s2"><span class="pl-c">// also</span></span>
+<span class="pl-s2"><span class="pl-vo">$iso4217</span><span class="pl-k">-&gt;</span>getAll();</span></pre></div>
 
 <p>Result:</p>
 
