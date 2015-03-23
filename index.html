@@ -1,35 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>ISO4217 by alcohol</title>
+    <meta name="description" content="ISO4217 : ISO 4217 PHP Library">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>ISO4217</title>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <h1 class="header">ISO4217</h1>
-        <p class="header">ISO 4217 PHP Library</p>
 
-        <ul>
-          <li class="download"><a class="buttons" href="https://github.com/alcohol/iso4217/zipball/master">Download ZIP</a></li>
-          <li class="download"><a class="buttons" href="https://github.com/alcohol/iso4217/tarball/master">Download TAR</a></li>
-          <li><a class="buttons github" href="https://github.com/alcohol/iso4217">View On GitHub</a></li>
-        </ul>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/alcohol/iso4217">View on GitHub</a>
 
-        <p class="header">This project is maintained by <a class="header name" href="https://github.com/alcohol">alcohol</a></p>
+          <h1 id="project_title">ISO4217</h1>
+          <h2 id="project_tagline">ISO 4217 PHP Library</h2>
 
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/alcohol/iso4217/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/alcohol/iso4217/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
 
-      </header>
-      <section>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
         <h1>
 <a id="alcoholiso4217" class="anchor" href="#alcoholiso4217" aria-hidden="true"><span class="octicon octicon-link"></span></a>Alcohol\ISO4217</h1>
 
@@ -53,13 +54,13 @@
 
 <p>Either install directly from command line using composer:</p>
 
-<div class="highlight highlight-sh"><pre>$ composer require <span class="pl-s1"><span class="pl-pds">"</span>alcohol/iso4217:~2.0<span class="pl-pds">"</span></span></pre></div>
+<div class="highlight highlight-sh"><pre>$ composer require <span class="pl-s"><span class="pl-pds">"</span>alcohol/iso4217:~2.0<span class="pl-pds">"</span></span></pre></div>
 
 <p>or manually include it as a dependency in your composer.json:</p>
 
 <div class="highlight highlight-javascript"><pre>{
-    <span class="pl-s1"><span class="pl-pds">"</span>require<span class="pl-pds">"</span></span><span class="pl-k">:</span> {
-        <span class="pl-s1"><span class="pl-pds">"</span>alcohol/iso4217<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">"</span>~2.0<span class="pl-pds">"</span></span>
+    <span class="pl-s"><span class="pl-pds">"</span>require<span class="pl-pds">"</span></span><span class="pl-k">:</span> {
+        <span class="pl-s"><span class="pl-pds">"</span>alcohol/iso4217<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>~2.0<span class="pl-pds">"</span></span>
     }
 }</pre></div>
 
@@ -68,16 +69,16 @@
 
 <p>Code:</p>
 
-<div class="highlight highlight-php"><pre><span class="pl-pse">&lt;?php</span><span class="pl-s2"></span>
-<span class="pl-s2"></span>
-<span class="pl-s2"><span class="pl-vo">$iso4217</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-s3">Alcohol\</span><span class="pl-s3">ISO4217</span>;</span>
-<span class="pl-s2"></span>
-<span class="pl-s2"><span class="pl-vo">$iso4217</span><span class="pl-k">-&gt;</span>getByAlpha3(<span class="pl-s1"><span class="pl-pds">'</span>EUR<span class="pl-pds">'</span></span>);</span>
-<span class="pl-s2"><span class="pl-c">// or</span></span>
-<span class="pl-s2"><span class="pl-vo">$iso4217</span><span class="pl-k">-&gt;</span>getByNumeric(<span class="pl-s1"><span class="pl-pds">'</span>978<span class="pl-pds">'</span></span>);</span>
-<span class="pl-s2"></span>
-<span class="pl-s2"><span class="pl-c">// also</span></span>
-<span class="pl-s2"><span class="pl-vo">$iso4217</span><span class="pl-k">-&gt;</span>getAll();</span></pre></div>
+<div class="highlight highlight-php"><pre><span class="pl-pse">&lt;?php</span><span class="pl-s1"></span>
+<span class="pl-s1"></span>
+<span class="pl-s1"><span class="pl-smi">$iso4217</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-c1">Alcohol\</span><span class="pl-c1">ISO4217</span>;</span>
+<span class="pl-s1"></span>
+<span class="pl-s1"><span class="pl-smi">$iso4217</span><span class="pl-k">-&gt;</span>getByAlpha3(<span class="pl-s"><span class="pl-pds">'</span>EUR<span class="pl-pds">'</span></span>);</span>
+<span class="pl-s1"><span class="pl-c">// or</span></span>
+<span class="pl-s1"><span class="pl-smi">$iso4217</span><span class="pl-k">-&gt;</span>getByNumeric(<span class="pl-s"><span class="pl-pds">'</span>978<span class="pl-pds">'</span></span>);</span>
+<span class="pl-s1"></span>
+<span class="pl-s1"><span class="pl-c">// also</span></span>
+<span class="pl-s1"><span class="pl-smi">$iso4217</span><span class="pl-k">-&gt;</span>getAll();</span></pre></div>
 
 <p>Result:</p>
 
@@ -149,12 +150,17 @@
 </li>
 </ul>
       </section>
-      <footer>
-        <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">ISO4217 maintained by <a href="https://github.com/alcohol">alcohol</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-		          <script type="text/javascript">
+
+              <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
@@ -164,6 +170,7 @@
             pageTracker._trackPageview();
             } catch(err) {}
           </script>
+
 
   </body>
 </html>
