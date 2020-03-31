@@ -134,7 +134,7 @@ class ISO4217Test extends \PHPUnit_Framework_TestCase
         $currencies = $iso4217->findAll();
 
         $this->assertInternalType('array', $currencies);
-        $this->assertCount(155, $currencies);
+        $this->assertCount(156, $currencies);
 
         $this->assertContainsOnly('Payum\ISO4217\Currency', $currencies);
     }
