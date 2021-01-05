@@ -11,6 +11,7 @@ namespace Payum\ISO4217;
 
 /**
  * A library providing ISO 4217 data.
+ * @deprecated This class is deprecated. Use Alcohol\ISO4217 instead
  */
 class ISO4217
 {
